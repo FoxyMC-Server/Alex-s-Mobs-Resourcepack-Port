@@ -14,4 +14,4 @@ Please read the `LICENSE.txt` for full details on usage, attribution, and licens
 ## License
 
 All assets from the original Java mod are licensed under the **GNU Lesser General Public License v3 (LGPLv3)**.  
-This port has been adapted for Minecraft Bedrock Edition. Modifications are documented, and the original license is preserved.  
+This port has been adapted for Minecraft Bedrock Edition by **King Porosus**. Modifications are documented, and the original license is preserved.  

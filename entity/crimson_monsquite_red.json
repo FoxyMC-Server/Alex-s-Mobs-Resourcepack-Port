@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mobs:crimson_monsquite_red",
+      "materials": {
+        "default": "parrot"
+      },
+      "textures": {
+        "blue": "textures/entity/crimson_monsquite_red",
+        "green": "textures/entity/crimson_monsquite_red",
+        "red_blue": "textures/entity/crimson_monsquite_red",
+        "yellow_blue": "textures/entity/crimson_monsquite_red",
+        "grey": "textures/entity/crimson_monsquite_red"
+      },
+      "geometry": {
+        "default": "geometry.crimson_monsquite_red_default"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.state = query.is_dancing ? 3 : (query.is_sitting ? 2 : (!query.is_on_ground && !query.is_jumping && !query.is_riding ? 0 : 1));",
+          "variable.dance.x = Math.cos(query.life_time * 57.3 * 20.0);",
+          "variable.dance.y = -Math.sin(query.life_time * 57.3 * 20.0);",
+          "variable.wing_flap = ((math.sin(query.wing_flap_position * 57.3) + 1) * query.wing_flap_speed);"
+        ]
+      },
+      "animations": {
+        "moving": "animation.crimson_monsquite_red.standing",
+        "base": "animation.crimson_monsquite_red.base",
+        "dance": "animation.crimson_monsquite_red.danse",
+        "sitting": "animation.crimson_monsquite_red.sitting",
+        "flying": "animation.crimson_monsquite_red.flaying",
+        "standing": "animation.crimson_monsquite_red.standing",
+        "look_at_target": "animation.crimson_monsquite_red.look_at_target"
+      },
+      "animation_controllers": [
+        {
+          "setup": "controller.animation.parrot.setup"
+        },
+        {
+          "move": "controller.animation.parrot.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.parrot"
+      ]
+    }
+  }
+}

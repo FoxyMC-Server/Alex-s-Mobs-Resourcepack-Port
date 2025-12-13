@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "name": "Alex's Mobs Port",
-    "uuid": "884ad9f7-3c17-4cf5-b6ca-45522dcbd456",
+    "uuid": "ee2d4fa8-d4af-4641-a778-3e988a22c32e",
     "version": [
       1,
       0,
@@ -17,7 +17,7 @@
   "modules": [
     {
       "type": "resources",
-      "uuid": "fcffd9df-15ba-40bf-8b8e-31275c0a8388",
+      "uuid": "2ddd6992-918f-4adc-805a-3ff725d5c569",
       "version": [
         1,
         0,
